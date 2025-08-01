@@ -14,7 +14,7 @@ select
         person_id,
         EXTRACT(YEAR FROM purchase_date) AS purchase_year,
         sum(purchase_amount) as purchase_amount
-    FROM online_purcase
+    FROM online_purchases
     WHERE tariff = 'hard' and gender = 'm'
 GROUP BY person_id, purchase_year
 ),
