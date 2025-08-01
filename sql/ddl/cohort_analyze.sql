@@ -12,7 +12,7 @@ WITH purchase_years AS (
         person_id,
         EXTRACT(YEAR FROM purchase_date) AS purchase_year,
         company_name
-    FROM online_purcase
+    FROM online_purchases
     WHERE tariff = 'hard' and gender = 'f'
 ),
 
